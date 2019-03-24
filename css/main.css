@@ -10,12 +10,13 @@ nav
     height: 80px;
 }
 
-.dash
+.sec-a
 {
-    background: #9d9d9d;
+    padding-bottom: 1em;
+   
 }
 
-.dashboard
+.card
 {
-    background: #f2f2f2;
+    padding-bottom: 2em;
 }
