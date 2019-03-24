@@ -1,0 +1,21 @@
+html, body 
+{
+    margin: 0;
+    padding: 0;
+}
+
+nav
+{
+    background: #000;
+    height: 80px;
+}
+
+.dash
+{
+    background: #9d9d9d;
+}
+
+.dashboard
+{
+    background: #f2f2f2;
+}
