@@ -11,12 +11,13 @@
 </head>
 <body>
 <nav></nav>
+
 <div class="container-fluid">
         <div class="row">
           <nav class="col-md-2 d-none d-md-block bg-light sidebar">
             <div class="sidebar-sticky">
               <ul class="nav flex-column">
-                <li class="nav-item">
+                <li class="nav-item" style="padding-top: 1em">
                   <a class="nav-link active" href="#">
                     <span data-feather="home"></span>
                     Dashboard <span class="sr-only">(current)</span>
@@ -24,7 +25,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <span data-feather="file"></span>
+                    <span data-feather="file">
+
+                    </span>
                     Jobs Posted
                   </a>
                 </li>
@@ -36,26 +39,27 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <span data-feather="users"></span>
-                    Assign Jobs
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">
                     <span data-feather="bar-chart-2"></span>
-                    Resumes
+                    Portfolio
                   </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">
-                    <span data-feather="layers"></span>
-                    About Us
+                    <span data-feather="layers" class="svg">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="icon">
+                        <path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 
+                        57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 
+                        16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 
+                        422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5
+                         48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg>
+                    </span>
+                    Profile
                   </a>
                 </li>
               </ul>
       
               <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                <span>Saved Employers</span>
+                <span>Saved Employees</span>
                 <a class="d-flex align-items-center text-muted" href="#">
                   <span data-feather="plus-circle"></span>
                 </a>
@@ -91,7 +95,7 @@
       
           <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-              <h1 class="h2">Dashboard</h1>
+              <h4>Dashboard</h4>
               <div class="btn-toolbar mb-2 mb-md-0">
                 <div class="btn-group mr-2">
                   <li class="nav-item" href="#">
@@ -188,46 +192,444 @@
                       </div>
                     </section>
 
-                      <div class="container">
-                        <div class="row">
-                            <div class="card text-white col-lg-6"  style="padding-left: 1em">
-                              <div class="card-header">Header</div>
-                              <div class="card-body">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <section class="jobs">
+                        <section>
+                        <div class="container">
+                          <div class="row" style="margin-bottom: 1em">
+                        <div class="col-md-4" style="background: #000; color: #fff; border-radius: 5px; padding-top: 10px; padding-bottom: 15px; margin-right: 1.5em; margin-bottom: 1em">
+                        <div ng-include="'app/pages/ui/tabs/mainTabs.html'" class="ng-scope"><div active="$tabSetStatus.activeTab" class="ng-isolate-scope">
+                            <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude=""><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Start" style="">
+                            <h5>Python Developer</h5>
+                            </ul>
+                            <div class="tab-content" style="padding-top: 10px; margin-bottom: 1em">
+                              <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                              <p class="ng-scope">Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p><p class="ng-scope">People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.</p><div class="text-center ng-scope"><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Shop.svg" src="assets/img/theme/icon/kameleon/Shop.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Programming.svg" src="assets/img/theme/icon/kameleon/Programming.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Dna.svg" src="assets/img/theme/icon/kameleon/Dna.svg"></div></div><p class="ng-scope">The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.</p></div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                              <div ng-show="$dropdownTabActive == 1" class="ng-scope" style=""><p>Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.</p><p>Failure is the condiment that gives success its flavor.</p></div><div ng-show="$dropdownTabActive == 2" class="ng-scope ng-hide" style=""><p class="text-center"></p></div></div><!-- end ngRepeat: tab in tabset.tabs -->
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-md-4" style="background: #000; color: #fff; border-radius: 5px; padding-top: 10px; margin-right: 1.5em; padding-bottom: 15px; margin-bottom: 1em">
+                            <div ng-include="'app/pages/ui/tabs/mainTabs.html'" class="ng-scope"><div active="$tabSetStatus.activeTab" class="ng-isolate-scope">
+                                <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude=""><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Start" style="">
+                                <h5>Python Developer</h5>
+                                </ul>
+                                <div class="tab-content" style="padding-top: 10px">
+                                  <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                  <p class="ng-scope">Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p><p class="ng-scope">People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.</p><div class="text-center ng-scope"><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Shop.svg" src="assets/img/theme/icon/kameleon/Shop.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Programming.svg" src="assets/img/theme/icon/kameleon/Programming.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Dna.svg" src="assets/img/theme/icon/kameleon/Dna.svg"></div></div><p class="ng-scope">The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.</p></div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                  <div ng-show="$dropdownTabActive == 1" class="ng-scope" style=""><p>Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.</p><p>Failure is the condiment that gives success its flavor.</p></div><div ng-show="$dropdownTabActive == 2" class="ng-scope ng-hide" style=""><p class="text-center"></p></div></div><!-- end ngRepeat: tab in tabset.tabs -->
+                                </div>
                               </div>
                             </div>
-                            <div class="card text-white col-lg-6">
-                              <div class="card-header">Header</div>
-                              <div class="card-body">
-                                <h5 class="card-title">Primary card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <div class="col-md-3" style="background: #000; color: #fff; border-radius: 5px; padding-top: 10px; padding-bottom: 15px; margin-bottom: 1em">
+                                <div ng-include="'app/pages/ui/tabs/mainTabs.html'" class="ng-scope"><div active="$tabSetStatus.activeTab" class="ng-isolate-scope">
+                                    <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude=""><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Start" style="">
+                                    <h5>Python Developer</h5>
+                                    </ul>
+                                    <div class="tab-content" style="padding-top: 10px">
+                                      <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                      <p class="ng-scope">Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p><p class="ng-scope">People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.</p><div class="text-center ng-scope"><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Shop.svg" src="assets/img/theme/icon/kameleon/Shop.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Programming.svg" src="assets/img/theme/icon/kameleon/Programming.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Dna.svg" src="assets/img/theme/icon/kameleon/Dna.svg"></div></div><p class="ng-scope">The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.</p></div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                      <div ng-show="$dropdownTabActive == 1" class="ng-scope" style=""><p>Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.</p><p>Failure is the condiment that gives success its flavor.</p></div><div ng-show="$dropdownTabActive == 2" class="ng-scope ng-hide" style=""><p class="text-center"></p></div></div><!-- end ngRepeat: tab in tabset.tabs -->
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+  
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="jobs">
+                      <section>
+                      <div class="container">
+                        <div class="row" style="margin-bottom: 1em">
+                      <div class="col-md-4" style="background: #000; color: #fff; border-radius: 5px; padding-top: 10px; padding-bottom: 15px; margin-right: 1.5em; margin-bottom: 1em">
+                      <div ng-include="'app/pages/ui/tabs/mainTabs.html'" class="ng-scope"><div active="$tabSetStatus.activeTab" class="ng-isolate-scope">
+                          <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude=""><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Start" style="">
+                          <h5>Python Developer</h5>
+                          </ul>
+                          <div class="tab-content" style="padding-top: 10px; margin-bottom: 1em">
+                            <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                            <p class="ng-scope">Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p><p class="ng-scope">People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.</p><div class="text-center ng-scope"><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Shop.svg" src="assets/img/theme/icon/kameleon/Shop.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Programming.svg" src="assets/img/theme/icon/kameleon/Programming.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Dna.svg" src="assets/img/theme/icon/kameleon/Dna.svg"></div></div><p class="ng-scope">The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.</p></div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                            <div ng-show="$dropdownTabActive == 1" class="ng-scope" style=""><p>Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.</p><p>Failure is the condiment that gives success its flavor.</p></div><div ng-show="$dropdownTabActive == 2" class="ng-scope ng-hide" style=""><p class="text-center"></p></div></div><!-- end ngRepeat: tab in tabset.tabs -->
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-md-4" style="background: #000; color: #fff; border-radius: 5px; padding-top: 10px; margin-right: 1.5em; padding-bottom: 15px; margin-bottom: 1em">
+                          <div ng-include="'app/pages/ui/tabs/mainTabs.html'" class="ng-scope"><div active="$tabSetStatus.activeTab" class="ng-isolate-scope">
+                              <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude=""><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Start" style="">
+                              <h5>Python Developer</h5>
+                              </ul>
+                              <div class="tab-content" style="padding-top: 10px">
+                                <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                <p class="ng-scope">Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p><p class="ng-scope">People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.</p><div class="text-center ng-scope"><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Shop.svg" src="assets/img/theme/icon/kameleon/Shop.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Programming.svg" src="assets/img/theme/icon/kameleon/Programming.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Dna.svg" src="assets/img/theme/icon/kameleon/Dna.svg"></div></div><p class="ng-scope">The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.</p></div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                <div ng-show="$dropdownTabActive == 1" class="ng-scope" style=""><p>Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.</p><p>Failure is the condiment that gives success its flavor.</p></div><div ng-show="$dropdownTabActive == 2" class="ng-scope ng-hide" style=""><p class="text-center"></p></div></div><!-- end ngRepeat: tab in tabset.tabs -->
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="col-md-3" style="background: #000; color: #fff; border-radius: 5px; padding-top: 10px; padding-bottom: 15px; margin-bottom: 1em">
+                              <div ng-include="'app/pages/ui/tabs/mainTabs.html'" class="ng-scope"><div active="$tabSetStatus.activeTab" class="ng-isolate-scope">
+                                  <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude=""><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Start" style="">
+                                  <h5>Python Developer</h5>
+                                  </ul>
+                                  <div class="tab-content" style="padding-top: 10px">
+                                    <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                    <p class="ng-scope">Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p><p class="ng-scope">People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.</p><div class="text-center ng-scope"><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Shop.svg" src="assets/img/theme/icon/kameleon/Shop.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Programming.svg" src="assets/img/theme/icon/kameleon/Programming.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Dna.svg" src="assets/img/theme/icon/kameleon/Dna.svg"></div></div><p class="ng-scope">The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.</p></div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                    <div ng-show="$dropdownTabActive == 1" class="ng-scope" style=""><p>Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.</p><p>Failure is the condiment that gives success its flavor.</p></div><div ng-show="$dropdownTabActive == 2" class="ng-scope ng-hide" style=""><p class="text-center"></p></div></div><!-- end ngRepeat: tab in tabset.tabs -->
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+
+                    </div>
+                  </div>
+                </section>
+
+                <section class="jobs">
+                    <section>
+                    <div class="container">
+                      <div class="row" style="margin-bottom: 1em">
+                    <div class="col-md-4" style="background: #000; color: #fff; border-radius: 5px; padding-top: 10px; padding-bottom: 15px; margin-right: 1.5em; margin-bottom: 1em">
+                    <div ng-include="'app/pages/ui/tabs/mainTabs.html'" class="ng-scope"><div active="$tabSetStatus.activeTab" class="ng-isolate-scope">
+                        <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude=""><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Start" style="">
+                        <h5>Python Developer</h5>
+                        </ul>
+                        <div class="tab-content" style="padding-top: 10px; margin-bottom: 1em">
+                          <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                          <p class="ng-scope">Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p><p class="ng-scope">People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.</p><div class="text-center ng-scope"><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Shop.svg" src="assets/img/theme/icon/kameleon/Shop.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Programming.svg" src="assets/img/theme/icon/kameleon/Programming.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Dna.svg" src="assets/img/theme/icon/kameleon/Dna.svg"></div></div><p class="ng-scope">The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.</p></div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                          <div ng-show="$dropdownTabActive == 1" class="ng-scope" style=""><p>Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.</p><p>Failure is the condiment that gives success its flavor.</p></div><div ng-show="$dropdownTabActive == 2" class="ng-scope ng-hide" style=""><p class="text-center"></p></div></div><!-- end ngRepeat: tab in tabset.tabs -->
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4" style="background: #000; color: #fff; border-radius: 5px; padding-top: 10px; margin-right: 1.5em; padding-bottom: 15px; margin-bottom: 1em">
+                        <div ng-include="'app/pages/ui/tabs/mainTabs.html'" class="ng-scope"><div active="$tabSetStatus.activeTab" class="ng-isolate-scope">
+                            <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude=""><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Start" style="">
+                            <h5>Python Developer</h5>
+                            </ul>
+                            <div class="tab-content" style="padding-top: 10px">
+                              <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                              <p class="ng-scope">Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p><p class="ng-scope">People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.</p><div class="text-center ng-scope"><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Shop.svg" src="assets/img/theme/icon/kameleon/Shop.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Programming.svg" src="assets/img/theme/icon/kameleon/Programming.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Dna.svg" src="assets/img/theme/icon/kameleon/Dna.svg"></div></div><p class="ng-scope">The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.</p></div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                              <div ng-show="$dropdownTabActive == 1" class="ng-scope" style=""><p>Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.</p><p>Failure is the condiment that gives success its flavor.</p></div><div ng-show="$dropdownTabActive == 2" class="ng-scope ng-hide" style=""><p class="text-center"></p></div></div><!-- end ngRepeat: tab in tabset.tabs -->
                             </div>
                           </div>
                         </div>
-                      </div>
+                        </div>
+                        <div class="col-md-3" style="background: #000; color: #fff; border-radius: 5px; padding-top: 10px; padding-bottom: 15px; margin-bottom: 1em">
+                            <div ng-include="'app/pages/ui/tabs/mainTabs.html'" class="ng-scope"><div active="$tabSetStatus.activeTab" class="ng-isolate-scope">
+                                <ul class="nav nav-tabs" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude=""><li ng-class="[{active: active, disabled: disabled}, classes]" class="uib-tab nav-item ng-scope ng-isolate-scope" heading="Start" style="">
+                                <h5>Python Developer</h5>
+                                </ul>
+                                <div class="tab-content" style="padding-top: 10px">
+                                  <!-- ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                  <p class="ng-scope">Take up one idea. Make that one idea your life--think of it, dream of it, live on that idea. Let the brain, muscles, nerves, every part of your body, be full of that idea, and just leave every other idea alone. This is the way to success.</p><p class="ng-scope">People who succeed have momentum. The more they succeed, the more they want to succeed, and the more they find a way to succeed. Similarly, when someone is failing, the tendency is to get on a downward spiral that can even become a self-fulfilling prophecy.</p><div class="text-center ng-scope"><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Shop.svg" src="assets/img/theme/icon/kameleon/Shop.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Programming.svg" src="assets/img/theme/icon/kameleon/Programming.svg"></div><div class="kameleon-icon with-round-bg primary inline-icon"><img ng-src="assets/img/theme/icon/kameleon/Dna.svg" src="assets/img/theme/icon/kameleon/Dna.svg"></div></div><p class="ng-scope">The reason most people never reach their goals is that they don't define them, or ever seriously consider them as believable or achievable. Winners can tell you where they are going, what they plan to do along the way, and who will be sharing the adventure with them.</p></div><!-- end ngRepeat: tab in tabset.tabs --><div class="tab-pane ng-scope active" ng-repeat="tab in tabset.tabs" ng-class="{active: tabset.active === tab.index}" uib-tab-content-transclude="tab" style="">
+                                  <div ng-show="$dropdownTabActive == 1" class="ng-scope" style=""><p>Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that benefit others.</p><p>Failure is the condiment that gives success its flavor.</p></div><div ng-show="$dropdownTabActive == 2" class="ng-scope ng-hide" style=""><p class="text-center"></p></div></div><!-- end ngRepeat: tab in tabset.tabs -->
+                                </div>
+                              </div>
+                            </div>
+                            </div>
 
+                  </div>
+                </div>
+              </section>
+          
+              <section id="sec-b">
+                  <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card mb-3" style="max-width: 540px">
+                                <div class="row no-gutters">
+                                  <div class="col-md-4">
+                                    <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="card mb-3" style="max-width: 540px;">
+                              <div class="row no-gutters">
+                                <div class="col-md-4">
+                                  <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                  </section>
+
+                  <section>
+                  <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card mb-3" style="max-width: 540px">
+                                <div class="row no-gutters">
+                                  <div class="col-md-4">
+                                    <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="card mb-3" style="max-width: 540px;">
+                              <div class="row no-gutters">
+                                <div class="col-md-4">
+                                  <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    </div>
+                  </section>
+
+              <section>
+                  <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card mb-3" style="max-width: 540px">
+                                <div class="row no-gutters">
+                                  <div class="col-md-4">
+                                    <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                      </div>
+                      <div class="col-lg-6">
+                          <div class="card mb-3" style="max-width: 540px;">
+                              <div class="row no-gutters">
+                                <div class="col-md-4">
+                                  <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                    </div>
+                    </div>
+                  </section>
+
+                  <section>
                       <div class="container">
-                        <div class="row">
-                          <div class="card text-white col-lg-6" style="padding-left: 1em">
-                            <div class="card-header">Header</div>
-                            <div class="card-body">
-                              <h5 class="card-title">Primary card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card mb-3" style="max-width: 540px">
+                                    <div class="row no-gutters">
+                                      <div class="col-md-4">
+                                        <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                      </div>
+                                      <div class="col-md-8">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Card title</h5>
+                                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                           </div>
+                          <div class="col-lg-6">
+                              <div class="card mb-3" style="max-width: 540px;">
+                                  <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                      <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
+                        </div>
+                      </section>
+
+                <section>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col-lg-6">
+                              <div class="card mb-3" style="max-width: 540px">
+                                  <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                      <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                         </div>
                         <div class="col-lg-6">
-                        <ul class="list-group">
-                          <li class="list-group-item">Cras justo odio</li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Morbi leo risus</li>
-                          <li class="list-group-item">Porta ac consectetur ac</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters">
+                                  <div class="col-md-4">
+                                    <img src="img/teacher-1.jpg" class="card-img" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Card title</h5>
+                                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                       </div>
+                      </div>
+                    </section>
+                    
+    <section>
+        <div class="block">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="about-us">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      </div>
+                      <div class="col-lg-5">
+                        <img src="img/closing.jpg" alt="" style="width: 400px; height: 300px">
+                      </div>
+                      <div class="col-lg-7">
+                        <h5>By Odong Gilbert, Code Ville Writer</h5>
+                        <p>So you've had a crazy day, with a million deadlines 
+                          and a thousand small crises. Now you have to interview 
+                          candidates for a marketing assistant position. If you 
+                          don't have a human resources department to guide you 
+                          along, here are some tips for how to prepare for and 
+                          conduct a job interview -- from the other side of the 
+                          desk.</p>
+                        <h5 style="padding-top: 1em">Nine Tips for Interviewers</h5>
+                        <p>Remember that during the interview process,
+                           candidates are deciding whether they want to work
+                            for you just as much as you are trying to decide
+                             whether to hire them. You have only about an hour 
+                             to make a good impression on the candidate. Follow
+                              these steps:</p>
+                      </div>
+                      <div class="col-lg-11">
+                        <h6 style="padding-top: 2em">1. Write down a list of questions that directly 
+                          relate to the job's responsibilities.</h6>
+                        <p>"If you don't have a job description, list the key 
+                          responsibilities of the position, and then draw up a 
+                          list of questions that relate to those responsibilities," 
+                          says John Dooney, manager of strategic resource for the
+                           Society for Human Resources Management, a nonprofit 
+                           association for human resources professionals.</p>
+                        <h6>2. Ask behavioural questions,</h6>
+                        <p> as in "tell me about a time when you..." 
+                          Ask for specific examples of past performance 
+                          and behaviour, says Dooney. Previous successes are a 
+                          good indicator of future performance.</p>
+                      </div>
+                      <div class="col-lg-11">
+                        <h6>3. Review the candidate's resume before the interview.</h6>
+                        <p>This may seem obvious, but by preparing your interview 
+                          questions and reviewing the resume, you are showing the 
+                          candidate you have taken the time to ensure a productive 
+                          interview.</p>
+                        <h6>4. Outline the interview structure for the candidate.</h6>
+                        <p> First, give a brief description of the company, and 
+                          then outline the job duties. Finally, ask the applicant 
+                          questions. After that, the candidate will have the
+                           opportunity to ask you questions. This sets up the
+                            parameters of the interview, keeps you both focused, 
+                            and gives the candidate an idea of what to expect.</p>
+                      </div>
+                        <div class="col-lg-11">
+                            <h6>5. Don't talk too much during the interview process.</h6>
+                            <p> Dooney suggests hiring managers should talk only 
+                              about 30 percent of the time. Allow candidates time 
+                              to describe their skills and qualifications during
+                               the interview. "Make sure you've covered all your
+                                questions and you haven't missed anything," Dooney adds.</p>
+                            <h6>6. Extend professional courtesies, says Dooney.</h6>
+                            <p> Offer candidates a glass of water, and ask if they had
+                               difficulty finding the place. Be on time. Consider giving
+                                them a tour of the office. Give them an opportunity to 
+                                speak with other team members or prospective coworkers, 
+                                if appropriate.</p>
+                          </div>
+                          <div class="col-lg-11">
+                              <h6>7. Watch nonverbal signals</h6>
+                              <p>Just as you are looking for eye contact and appropriate 
+                                dress, the candidate is looking for those unspoken signals
+                                 from you. Be sure your tone of voice is appropriate and 
+                                 professional. Clearly articulate the job's duties and the 
+                                 company's mission. Dress as you normally would, and pay 
+                                 attention to manners. You are a representative of your
+                                  company and department, so make sure your actions reflect
+                                   this. </p>
+                              <h6>8. While being polite and professional, don't get too chummy.</h6>
+                              <p> "Keep all your questions job-related," says Dooney. If you 
+                                spend the interview chatting, you may make a hiring decision
+                                 because you liked the candidate versus whether the person is 
+                                 truly qualified for the job, he explains.</p>
+                            </div>
+                            <div class="col-lg-11">
+                                <h6>9. Whether it's by email or phone, follow up</h6>
+                                <p> to let candidates know whether they got the job. This is one more way of extending a professional courtesy and gives the interview process closure. </p>
+                                <h5>The Answer You’ve Been Waiting For</h5>
+                                <p>The hiring process is hardly a walk in the park, and the job interview may very well be the trickiest step to get through. Don’t sweat it. Could you use some help preparing? Join Monster for free today. As a member, you’ll receive interview advice, hiring tips, special offers, industry trends, and much more. We know you’re eager to make someone an offer, and with Monster’s expertise, you can help make sure you’re welcoming top-level talent to your team.</p>
+                                   </div>
+                                     </div>
+                                   </div>
+                               </div>
+                             </div>
+                             </div>
+                          </div>
                         </div>
-                      </div>
-            
+                      </section>                         
+
+                          
             </div>
           </main>
           </div>

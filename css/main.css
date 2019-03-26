@@ -2,6 +2,7 @@ html, body
 {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 nav
@@ -20,3 +21,523 @@ nav
 {
     padding-bottom: 2em;
 }
+.pic{
+    text-align: center;
+}
+.pic img
+{
+    width: 400px;
+    height: 300px;
+}
+
+#icon
+{
+    width: 20px;
+}
+
+li 
+{
+    list-style: none;
+    text-decoration: none;
+    display: inline;
+}
+
+#sec-t
+{
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 12%;
+}
+
+#sec-t h2
+{
+    text-align: center;
+}
+
+#sec-t h5
+{
+    text-align: center;
+    padding-top: 1em;
+}
+
+#sec-t p
+{
+    text-align: left;
+    padding-top: 1em;
+    font-size: .95em;
+}
+
+.cons img
+{
+    width: 450px;
+    height: 500px;
+}
+
+.cons
+{
+    padding-right: 12%;
+}
+
+.cons1 img
+{
+    width: 450px;
+    height: 500px;
+}
+
+#forms
+{
+    width: 700px;
+    padding-left: 20%;
+}
+
+.foodForm
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#sides
+{
+    background: url(img/teacher.jpg);
+}
+
+
+    #buttons
+    {
+        margin-top: 50px;
+    }
+
+
+
+    #menuIcon
+    {
+        height: 50px;
+        width: 50px;
+        fill: rgb(39, 38, 35);
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #menuIcon:hover
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background: #FFD200;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        fill: #fff;
+    }
+
+    #menuPage
+    {
+        width: 100%;
+        height: 100vh;
+        background: #30E8BF;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    #menuTitle
+    {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    #menuText
+    {
+        display: grid;
+        grid-template-columns: 20% 25% 25% 20%;
+    }
+
+    a
+    {
+        text-decoration: none;
+        color: rgb(32, 32, 30);
+    }
+
+    .menulinks
+    {
+        font-size: 60px;
+        color: rgb(32, 32, 30);
+        font-family: 'Acme', sans-serif;
+        cursor: pointer;
+    }
+
+    #menulogoText
+    {
+        font-family: 'Pacifico', cursive;
+        color: rgb(32, 32, 30);
+        font-size: 40px;
+        text-decoration: underline;
+    }
+
+    #menuclear
+    {
+        fill: rgb(32, 32, 30);
+        height: 60px;
+        width: 60px;
+        margin-top: 20px;
+        margin-left: 150px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    #menuclear:hover
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background: rgb(223, 126, 65);
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        fill: #fff;
+    }
+
+    #two
+    {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);
+        margin-top: 200px;
+    }
+
+    #one
+    {
+        -webkit-transform: rotate(20deg);
+        -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+        -o-transform: rotate(20deg);
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+
+    #four
+    {
+        -webkit-transform: rotate(-20deg);
+        -moz-transform: rotate(-20deg);
+        -ms-transform: rotate(-20deg);
+        -o-transform: rotate(-20deg);
+        margin-top: 200px;
+    }
+
+    #three
+    {
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        margin-top: 80px;
+    }
+
+    a:hover
+    {
+        color: #f2f2f2;
+    }
+
+    #phoneHtml
+    {
+        display: none;
+    }
+
+
+    #textSide
+    {
+        background-image: url('.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    #formSide
+    {
+        background: #222;
+    }
+
+    .formcontrol
+    {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        color: #f2f2f2;
+        background-color: #363636;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 8px 16px;
+        width: 220px;
+    }
+
+    #logoSignInText
+    {
+        font-family: 'Acme', sans-serif;
+        color: #f2f2f2;
+        margin-left: 150px;
+        text-decoration: underline;
+    }
+
+
+    #submitBtn
+    {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        color: #f2f2f2;
+        background-color: rgb(245, 97, 5);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 8px 16px;
+        width: 240px;
+        font-family: 'Bitter', serif;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    label
+    {
+        color: #f2f2f2;
+        font-family: 'Bitter', serif;
+    }
+
+    #foodLogo
+    {
+        background: #181818;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #logInHelpText
+    {
+        color: #f2f2f2;
+        font-family: 'Bitter', serif;
+    }
+
+    #spanLogin
+    {
+        color: rgb(245, 97, 5);
+        cursor: pointer;
+    }
+
+
+    #promo
+    {
+        color: #222;
+        font-size: 35px;  
+    }
+
+    #promo2
+    {
+        color: #222;
+        font-size: 35px;  
+    }
+
+    #promo3
+    {
+        color: #222;
+        font-size: 35px;  
+    }
+
+    #changethewords
+    {
+        margin-top: 100px;
+        margin-left: 140px;
+        font-family: 'Acme', sans-serif;
+    }
+
+
+    #credits
+    {
+        color: #f2f2f2;
+        font-family: 'Bree Serif', serif;
+    }
+
+    #creditsBox
+    {
+        /* display: grid; */
+        justify-items: center;
+    }
+
+
+    #iconToHomePage
+    {
+        margin-left: 80%;
+    }
+
+    #toHomePage
+    {
+        fill:  #222;
+        height: 50px;
+        width: 50px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        cursor: pointer;
+    }
+
+    #toHomePage:hover
+    {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background: #FFD200;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        fill: #f2f2f2;
+    }
+
+    #feedBack
+    {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 2px solid #EA384D;
+        color: #EA384D;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 14px;
+        padding: 8px 16px;
+        width: 240px;
+        font-family: 'Bitter', serif;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 150px;
+        display: none;
+    }
+
+    #goodFeedBack
+    {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 2px solid rgb(25, 175, 32);
+        color: rgb(25, 175, 32);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 14px;
+        padding: 8px 16px;
+        width: 240px;
+        font-family: 'Bitter', serif;
+        margin-top: 20px;
+        cursor: pointer;
+        margin-left: 150px;
+        margin-top: 20px;
+        display: none;
+    }
+
+    .main1
+    {
+        fill: #fff;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .main
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .upper
+    {
+        display: none;
+        width: 100%;
+        background: #000;
+    }
+
+    .phoneForm
+    {
+        display: none;
+    }
+
+    .postings
+    {
+        width: 100%;
+        padding-left: 20%;
+    }
+
+    .job-post
+    {
+        width: 765px;
+        line-height: 1.4;
+        
+    }
+
+    .project-post
+    {
+        background: #9d9d9d;
+        padding: 2em;
+        border-radius: 5px;
+    }
+
+    @media only screen and (max-width: 500px)
+{
+    #changethewords
+    {
+        display: none;
+    }
+
+    #iconToHomePage
+    {
+        display: none;
+    }
+
+
+    .upper
+    {
+        display: block;
+        width: 100%;
+        background: #000;
+    }
+
+    .phoneForm
+    {
+        display: block;
+    }
+
+    .phoneForm #logoSignInText
+    {
+        text-align: left;
+    }
+
+    .pcForm
+    {
+        display: none;
+    }
+
+    #logoSignInText
+    {
+        font-family: 'Acme', sans-serif;
+        color: #f2f2f2;
+        margin-left: 20px;
+        text-decoration: underline;
+    }
+
+    .main1
+    {
+        fill: #fff;
+        width: 50px;
+        height: 50px;
+        margin-left: 80px;
+        margin-top: -18px;
+    }
+
+    #spanLogin
+    {
+        color: rgb(245, 97, 5);
+        cursor: pointer;
+        margin-left: 20px;
+    }
+}
+
+
